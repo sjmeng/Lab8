@@ -24,5 +24,10 @@ describe('checks correct state object', () =>{
         pushToHistory('entry', 1);
         expect(history.state.page).toBe('entry1');
     });
+    test('homepage', () => {
+        pushToHistory("default",0);
+        expect(history.state.page).toBe(undefined);
+    });
+
 });
 
