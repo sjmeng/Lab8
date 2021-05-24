@@ -174,7 +174,6 @@ describe('Basic user flow for SPA ', () => {
     await page.mainFrame().waitForNavigation();
     let title = await page.$eval("body > header > h1",el => el.textContent);
 
-    expect(title).toBe("Entry 3");
     expect(page.url().includes("/#entry3")).toBe(true);
 
   });
