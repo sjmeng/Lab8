@@ -16,11 +16,11 @@
 
 4. What do you expect to happen if we run our puppeteer tests with the field “headless” set to true?
 
-We expect our tests to run without generating the visuals of the browser UI.
+- We expect our tests to run without generating the visuals of the browser UI.
 
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
 
-It could include the click method on the settings image to navigate to settings such as 
+- It could include the click method on the settings image to navigate to settings such as 
   
 ```
 await page.click("body > header > img");
